@@ -1,4 +1,70 @@
+@font-face {
+    font-family: me123;
+    src: url(me123.ttf)
+}
+
 body {
-    background-color: #000000;
-    overlay: hidden;
+    background-color: #000;
+    overflow: hidden;
+    padding: 50px;
+}
+
+.UIContainer {
+    margin: 50px;
+    position: absolute;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;
+}
+
+#menu {
+
+}
+
+p {
+    color: #ccc;
+    font-family: me123;
+    font-size: 12;
+    text-align: right;
+}
+
+#controls {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.button {
+    display: flex;
+    height: 50px;
+    width: 50px;
+    background-color: #111;
+    border-radius: 10px;
+    transition: .1s;
+}
+
+.button:hover {
+    margin-top: -3px;
+    transition: .1s;
+}
+
+.mainIcons {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+}
+
+#button1 {
+    margin-right: 10px;
+}
+
+#button2 {
+    margin-left: 10px;
+}
+
+#button3 {
+    margin-left: auto;
 }
