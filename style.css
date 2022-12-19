@@ -1,3 +1,8 @@
+@font-face {
+    font-family: me123;
+    src: url(me123.ttf)
+}
+
 body {
     background-color: #000;
     overflow: hidden;
@@ -13,15 +18,22 @@ body {
     left:0px;
 }
 
+#menu {
+
+}
+
+p {
+    color: #ccc;
+    font-family: me123;
+    font-size: 12;
+    text-align: right;
+}
+
 #controls {
     display: flex;
     position: absolute;
     bottom: 0;
     width: 100%;
-}
-
-#menu {
-
 }
 
 .button {
