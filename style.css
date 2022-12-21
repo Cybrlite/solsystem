@@ -18,18 +18,64 @@ body {
     left:0px;
 }
 
-#menu {
+#topContainer {
+    display: flex;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+#menuButton {
 
 }
 
-p {
+#menu {
+    position: absolute;
+    background-color: #111;
+    border-radius: 10px;
+    width: 500px;
+    height: 1600%;
+    display: none;
+}
+
+#menuIcon {
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+ul {
+    color: #ccc;
+    font-family: me123;
+    font-size: 15px;
+    margin-top: 30px;
+    padding-left: 30px;
+    max-width: 300px;
+}
+
+.menuItems {
+    position: relative;
+    line-height: 75px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    transition: .1s;
+}
+
+.menuItems:hover {
+    transform: translate(0, -3px);
+    transition: .1s;
+}
+
+#title {
     color: #ccc;
     font-family: me123;
     font-size: 12;
     text-align: right;
+    margin-left: auto;
+    margin-top: 0;
+    text-decoration: none;
 }
 
-#controls {
+#bottomContainer {
     display: flex;
     position: absolute;
     bottom: 0;
