@@ -6,16 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>solsystem</title>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="menu.js"></script>
 </head>
 <body>
-    <div class="UIContainer">
-        <div class="button" id="menu"><img class="mainIcons" src="images/Frame 3.svg"></div>
-        <p>SOL SYSTEM</p>
-        <div id="controls">
+    <main class="UIContainer">
+        <header id="topContainer">
+            <div class="button" id="menuButton"><img class="mainIcons" src="images/Frame 3.svg"></div>
+            <nav id="menu">
+                <img id="menuIcon" src="images/X.svg">
+                <ul>
+                    <p class="menuItems">SOL SYSTEM</p>
+                    <p class="menuItems">KEPLER SYSTEM</p>
+                    <p class="menuItems">TRAPPIST SYSTEM</p>
+                    <p class="menuItems">ABOUT</p>
+                    <p class="menuItems">MAN-MADE OBJECTS</p>
+                    <p class="menuItems">SIZE COMPARISON</p>
+                    <p class="menuItems">DONATE</p>
+                </ul>
+            </nav>
+            <a href="index.html" id="title"><p>SOL SYSTEM</p></a>
+        </header>
+        <footer id="bottomContainer">
             <div class="button" id="button1"><img class="mainIcons" src="images/chevrons-down.svg"></div>
             <div class="button" id="button2"><img class="mainIcons" src="images/arrow-swap.svg"></div>
             <a id="button3" href="https://github.com/Cybrlite/solsystem" target="blank"><div class="button"><img class="mainIcons" src="images/GitHub.svg"></div></a>
-        </div>
-    </div>
+        </footer>
+    </main>
 </body>
 </html>
