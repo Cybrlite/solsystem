@@ -25,10 +25,6 @@ body {
     width: 100%;
 }
 
-#menuButton {
-
-}
-
 #menu {
     position: absolute;
     background-color: #111;
@@ -36,6 +32,10 @@ body {
     width: 500px;
     height: 1600%;
     display: none;
+}
+
+.show {
+    display: inline;
 }
 
 #menuIcon {

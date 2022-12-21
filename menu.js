@@ -1,20 +1,31 @@
-function menu() {
-    document.getElementById("menu").classList.toggle("show");
+document.getElementById("menuButton").addEventListener("click", clickMenuButton)
+document.getElementById("menuIcon").addEventListener("click", clickMenuIcon)
+
+function clickMenuButton(e){
+  let node = e.target;
+  document.getElementById("menu").style.display = "block"
 }
 
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
+function clickMenuIcon(e){
+  let node = e.target;
+  document.getElementById("menu").style.display = "none"
+}
 
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
+window.addEventListener("click", function(e) {
+  let node = e.target;
+  const menuElement = document.getElementById("menu");
+  const cssObj = window.getComputedStyle(menuElement, null);
+  let arrParents = getParents(node);
+  if ((node.id != "menu" && node.id != "menuButton") && (!arrParents.includes("menu") && !arrParents.includes("menuButton")) && cssObj.getPropertyValue("display") != "none") {
+    document.getElementById("menu").style.display = "none"
   }
-}
+});
 
-// not broken
+function getParents(elem) {
+  let parents = [];
+  while(elem.parentNode && elem.parentNode.nodeName.toLowerCase() != "body") {
+    elem = elem.parentNode;
+    parents.push(elem.id);
+  }
+  return parents;
+}
