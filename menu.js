@@ -13,8 +13,8 @@ $(function() {
   });
 });
 
-$('html').click(function(event) {
-  if ($(event.target).closest('#menu, #menuButton').length === 0) {
+$('html').click(function(e) {
+  if ($(e.target).closest('#menu, #menuButton').length === 0) {
     $('#menu').animate({opacity: '0%'}, 200, function() {
       $(this).hide();
     });
