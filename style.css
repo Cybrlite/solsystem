@@ -92,6 +92,12 @@ ul {
     margin-left: auto;
     margin-top: 0;
     text-decoration: none;
+    transition: .1s;
+}
+
+#title:hover {
+    transform: translate(0, -3px);
+    transition: .1s;
 }
 
 #bottomContainer {
