@@ -1,18 +1,22 @@
-function menu() {
-    document.getElementById("menu").classList.toggle("show");
-}
+$(function() {
+  $('#menuButton').on('click', function(e) {
+    $('#menu').show();
+    $('#menu').animate({opacity: '100%'}, 100)
+  });
+});
 
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
+$(function() {     
+  $('#menuIcon').on('click', function(e) {
+    $('#menu').animate({opacity: '0%'}, 200, function() {
+      $(this).hide();
+    });
+  });
+});
 
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
+$('html').click(function(e) {
+  if ($(e.target).closest('#menu, #menuButton').length === 0) {
+    $('#menu').animate({opacity: '0%'}, 200, function() {
+      $(this).hide();
+    });
+  };
+});
