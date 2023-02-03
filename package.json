@@ -4,7 +4,8 @@
   "description": "web-based interactive solar system educational explorer",
   "main": "menu.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run start"
   },
   "repository": {
     "type": "git",
