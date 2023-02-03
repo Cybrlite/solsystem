@@ -4,7 +4,9 @@
   "description": "web-based interactive solar system educational explorer",
   "main": "menu.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-html": "open-cli index.html",
+    "start": "npm run start-html"
   },
   "repository": {
     "type": "git",
@@ -16,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/Cybrlite/solsystem/issues"
   },
-  "homepage": "https://github.com/Cybrlite/solsystem#readme"
+  "homepage": "https://github.com/Cybrlite/solsystem#readme",
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "open-cli": "^7.1.0"
+  }
 }
