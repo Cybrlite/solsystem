@@ -34,7 +34,7 @@ const IndexPage = () => (
         </footer>
     </main>
     </body>
-    <script src="menu.js"></script>
+    
   </Layout>
 )
 
