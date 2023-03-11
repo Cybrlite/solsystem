@@ -65,7 +65,7 @@ ul {
 }
 
 .menuItems:hover {
-    transform: translate(0, -3px);
+    transform: translate(3px, 0);
     transition: .1s;
 }
 
