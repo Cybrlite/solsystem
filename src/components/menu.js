@@ -1,4 +1,11 @@
-import $ from "jquery"
+import * as React from "react"
+import { Link } from "gastby"
+
+const Menu = () => (
+
+
+)
+
 $(function() {
     $('#menuButton').on('click', function(e) {
     $('#menu').show();
