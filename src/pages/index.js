@@ -12,19 +12,7 @@ const IndexPage = () => (
     <body>
     <main class="UIContainer">
         <header id="topContainer">
-            <div class="button" id="menuButton"><img class="mainIcons" src="images/Frame_3.svg"></img></div>
-            <nav id="menu" class="show">
-                <img id="menuIcon" src="images/X.svg"></img>
-                <ul>
-                    <p class="menuItems">SOL SYSTEM</p>
-                    <p class="menuItemsHidden">KEPLER SYSTEM<p class="comingSoon">COMING SOON</p></p>
-                    <p class="menuItemsHidden">TRAPPIST SYSTEM<p class="comingSoon">COMING SOON</p></p>
-                    <p class="menuItems">ABOUT</p>
-                    <p class="menuItems">MAN-MADE OBJECTS</p>
-                    <p class="menuItems">SIZE COMPARISON</p>
-                    <p class="menuItems">DONATE</p>
-                </ul>
-            </nav>
+            <Menu/>
             <a href="index.html" id="title"><p>SOL SYSTEM</p></a>
         </header>
         <footer id="bottomContainer">
