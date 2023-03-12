@@ -1,3 +1,8 @@
+@font-face {
+  font-family: me123;
+  src: url(../../public/images/me123.ttf)
+}
+
 body {
   background-color: #000;
   overflow: hidden;
@@ -76,7 +81,7 @@ ul {
 .comingSoon {
   color: #00a9fb;
   font-size: 10px;
-  margin-top: -20px;
+  margin-top: -50px;
 }
 
 #title {
