@@ -22,7 +22,6 @@ const IndexPage = () => (
         </footer>
     </main>
     </body>
-    
   </Layout>
 )
 
