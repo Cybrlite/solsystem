@@ -17,7 +17,7 @@ const IndexPage = () => (
         </header>
         <footer id="bottomContainer">
             <div class="button" id="button1"><img class="mainIcons" src="images/chevron_down.svg"></img></div>
-            <div class="button" id="button2"><img class="mainIcons" src="images/arrow-swap.svg"></img></div>
+            <div class="button" id="button2"><img class="mainIcons" src="images/switch.svg"></img></div>
             <a id="button3" href="https://github.com/Cybrlite/solsystem" target="blank"><div class="button"><img class="mainIcons" src="images/GitHub.svg"></img></div></a>
         </footer>
     </main>
