@@ -1,0 +1,15 @@
+import * as React from "react"
+
+import Layout from "../components/layout"
+import Seo from "../components/seo"
+
+const NotFoundPage = () => (
+  <Layout>
+    <h1 style={{color: "white",}}>404: Not Found</h1>
+    <p style={{color: "white",}}>You just hit a route that doesn&#39;t exist... the sadness.</p>
+  </Layout>
+)
+
+export const Head = () => <Seo title="404: Not Found | Sol System" />
+
+export default NotFoundPage
